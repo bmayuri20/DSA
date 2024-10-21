@@ -3,9 +3,7 @@ import java.util.Scanner;
 class DataTypes{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-       // int T = sc.nextInt();
-        //while (T-- > 0) {
-          //  sc.nextLine();
+       
             String s = sc.next();
            Solution obj = new Solution();
             int ans = obj.dataTypeSize(s);
@@ -15,9 +13,9 @@ class DataTypes{
             }
             System.out.println(ans); 
             sc.close();
-      //  }
+       }
     }
-}
+
 class Solution{
      int dataTypeSize(String str){
         switch (str) {
