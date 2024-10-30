@@ -2,11 +2,11 @@ import java.util.Scanner;
 
 public class Pattern1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter N");
-        int n = sc.nextInt();
-        nForest(n);
-        sc.close();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter N");
+            int n = sc.nextInt();
+            nForest(n);
+        }
     }
 
     private static void nForest(int n) {
